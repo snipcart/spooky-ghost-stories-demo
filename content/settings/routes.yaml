@@ -1,0 +1,15 @@
+routes:
+
+  /:
+    data: page.landing
+    template: landing
+
+  /nl-welcome-email/:
+    data: page.nl-welcome-email
+    template: nl-welcome-email
+
+collections:
+  
+  /nl-stories-email/:
+    permalink: /stories/{slug}/
+    template: nl-stories-email

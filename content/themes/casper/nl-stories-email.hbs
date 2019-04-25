@@ -1,0 +1,95 @@
+{{!< email}}
+
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+
+    <tr>
+        <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+            Thank you for subscribing to our Spooky Stories blog! Here is what you may have missed this week
+            </p>
+        </td>
+    </tr>
+
+    {{#get "posts" filter="primary_tag:nl-story" limit="2" order="published_at desc" }}
+    {{#foreach posts}}
+
+    <tr>
+        <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+            <h1
+                style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 25px; line-height: 30px; color: #333333; font-weight: normal;">
+                {{title}}</h1>
+            <p style="margin: 0;">
+                {{excerpt}}
+            </p>
+        </td>
+    </tr>
+
+    <tr>
+        <td style="padding: 0 20px 20px;">
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                <tr>
+                    <td class="button-td button-td-primary" style="border-radius: 4px; background: #222222;">
+                        <a class="button-a button-a-primary" href="{{url absolute="true"}}"
+                            style="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">
+                            Read the whole story</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    {{/foreach}}
+    {{/get}}
+
+    <tr>
+        <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+
+            Thanks so much for reading, and enjoy!
+
+        </td>
+    </tr>
+
+    <tr>
+        <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+
+            -The Snipcart Team
+
+        </td>
+    </tr>
+
+</table>
+
+<!-- Full Bleed Background Section : BEGIN -->
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #709f2b;">
+    <tr>
+        <td>
+            <div align="center" style="max-width: 600px; margin: auto;" class="email-container">
+                <!--[if mso]>
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                        <tr>
+                        <td>
+                        <![endif]-->
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                        <td
+                            style="padding: 20px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #ffffff;">
+                            <p style="margin: 0;">
+                                As mentioned in your welcome email, you will now be automatically
+                                unsubscribed from this newsletter for your convenience. However, if you enjoyed
+                                this Ghost CMS demo and would like to learn how to create even more cool sites
+                                using awesome platforms, feel free to subscribe to our (real) <a
+                                    style="color: #ffffff; text-decoration:underline;"
+                                    href="https://snipcart.com/blog#form-wrapper">Snipcart newsletter!</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <!--[if mso]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+            </div>
+        </td>
+    </tr>
+</table>
+<!-- Full Bleed Background Section : END -->

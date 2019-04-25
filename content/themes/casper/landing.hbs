@@ -1,0 +1,38 @@
+{{!< default}}
+
+<header id="landing-header" class="site-header outer">
+    {{> "site-nav"}}
+</header>
+
+{{#page}}
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <article class="post-full {{post_class}}">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                </section>
+                <h1 class="post-full-title">{{title}}</h1>
+            </header>
+
+            <section class="post-full-content">
+                <div class="post-content" style="padding-bottom:70px;">
+                    {{content}}
+                    <a href="#subscribe">Stay up to date!</a>
+                </div>
+            </section>
+
+        </article>
+
+    </div>
+</main>
+
+{{/page}}
+
+<style>
+    #landing-header .site-nav{
+        top:0;
+    }
+</style>

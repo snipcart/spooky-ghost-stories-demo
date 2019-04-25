@@ -39,18 +39,6 @@ It's a good idea to keep this template as minimal as possible in terms of both f
             </div>
         </main>
 
-        {{#get "posts" limit="3"}}
-        <aside class="outer">
-            <div class="inner">
-                <div class="post-feed">
-                    {{#foreach posts}}
-                        {{> "post-card"}}
-                    {{/foreach}}
-                </div>
-            </div>
-        </aside>
-        {{/get}}
-
     </div>
 </body>
 </html>

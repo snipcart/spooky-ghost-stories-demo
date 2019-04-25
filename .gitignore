@@ -1,3 +1,9 @@
+# Database
+content/data/
+
+# Deploys
+*.zip
+
 # Logs
 logs
 *.log
